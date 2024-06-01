@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Contact form</title>
+
+</head>
+<body>
+  <div id="texto">
+    <h1>Contact Us</h1>
+    
+    <form>
+      <div id="names">
+        <div id="firstname">
+          <p>First Name</p>
+          <input id="firstnamei" required placeholder="Example: Paul">
+        </div>
+        <div id="lastname">
+          <p>Last Name</p>
+          <input id="lastnamei" required placeholder="Example: Smith">
+        </div>
+      </div>
+      <div id="email">
+        <p>Email Address</p>
+        <input required type="email" placeholder="Paul@example.com">
+      </div>
+      <div id="query">  
+        <p>Query Type</p>
+        <input required type="checkbox">General Enquiry
+        <input required type="checkbox">Support Request
+      </div>
+      <div id="message">
+        <p>Message</p>
+        <textarea required id=”msg” name=”message” rows=”4” placeholder="Explain your query" cols=”50”></textarea>
+      </div>
+      <div id="checkbox">
+        <input type="checkbox" required>I consent to being contacted by the team</input>
+      </div>
+      <div id="submit"> 
+        <input type="submit" value="Submit Form">
+      </div> 
+        <!-- Message Sent!
+        Thanks for completing the form. We'll be in touch soon! -->
+    </form>
+  </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Kenobiiii">Pablo Romero Pons-Fuster</a>.
+    </div>
+  </body>
+</html>

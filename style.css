@@ -1,0 +1,37 @@
+#texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    border: 1px solid black ;
+
+}
+
+.attribution {
+    display: flex;
+    align-items: flex-end;
+}
+
+#names {
+    margin: auto;
+    box-sizing: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#firstnamei, #lastnamei {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 25px;
+}
+
+#firstname, #lastname {
+    border: 1px solid black;
+}
