@@ -15,26 +15,28 @@
     
     <form>
       <div id="names">
-        <div id="firstname">
-          <p>First Name</p>
-          <input id="firstnamei" required placeholder="Example: Paul">
+        <div class="nametxt">
+          <p class="required">First Name</p>
+          <input class="nameinput" required> 
         </div>
-        <div id="lastname">
-          <p>Last Name</p>
-          <input id="lastnamei" required placeholder="Example: Smith">
+        <div class="nametxt">
+          <p class="required">Last Name</p>
+          <input class="nameinput" required>
         </div>
       </div>
+
+
       <div id="email">
-        <p>Email Address</p>
-        <input required type="email" placeholder="Paul@example.com">
+        <p class="required">Email Address</p>
+        <input id="emailinput" required type="email" placeholder="Paul@example.com">
       </div>
       <div id="query">  
-        <p>Query Type</p>
+        <p class="required">Query Type</p>
         <input required type="checkbox">General Enquiry
         <input required type="checkbox">Support Request
       </div>
       <div id="message">
-        <p>Message</p>
+        <p class="required">Message</p>
         <textarea required id=”msg” name=”message” rows=”4” placeholder="Explain your query" cols=”50”></textarea>
       </div>
       <div id="checkbox">
