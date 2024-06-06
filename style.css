@@ -4,6 +4,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(224, 241, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #texto {
@@ -11,11 +16,24 @@ body {
     background-color: white;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    width: 800px;
     max-width: 700px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 15px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 97%;
 }
 
 .attribution {
@@ -28,10 +46,6 @@ body {
 
 form {
     width: 100%;
-}
-
-#formulary {
-    border: 1px solid black;
 }
 
 #names {
@@ -51,7 +65,7 @@ form {
 .nameinput, .emailinput, .msg {
     width: 100%;
     height: 100px;
-    border: 2px solid rgb(44, 36, 36);
+    border: 2px solid rgb(167, 162, 162);
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -59,6 +73,26 @@ form {
 
 .nameinput, .emailinput {
     height: 60px;
+}
+
+.query-option {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 310px;
+    height: 30px;
+}
+
+#querydiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .required::after {
@@ -77,6 +111,10 @@ form {
         display: block;
         margin: auto;
 
+}
+
+.checkboxs {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 #names, #email, #query, #message {

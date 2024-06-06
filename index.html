@@ -9,49 +9,59 @@
   <title>Contact form</title>
 </head>
 <body>
-  <div id="texto">
-    <h1>Contact Us</h1>
-    
-    <form id="formulary">
-      <div id="names">
-        <div class="nametxt">
-          <p class="required">First Name</p>
-          <input class="nameinput" required> 
+  <div id="container">
+    <div id="texto">
+      <h1>Contact Us</h1>
+      
+      <form id="formulary">
+        <div id="names">
+          <div class="nametxt">
+            <p class="required">First Name</p>
+            <input class="nameinput" required> 
+          </div>
+          <div class="nametxt">
+            <p class="required">Last Name</p>
+            <input class="nameinput" required>
+          </div>
         </div>
-        <div class="nametxt">
-          <p class="required">Last Name</p>
-          <input class="nameinput" required>
+        
+        <div id="email">
+          <p class="required">Email Address</p>
+          <input class="emailinput" required type="email">
         </div>
-      </div>
-
-      <div id="email">
-        <p class="required">Email Address</p>
-        <input class="emailinput" required type="email">
-      </div>
-
-      <div id="query">  
-        <p class="required">Query Type</p>
-        <input required class="Query" name="query" type="radio">General Enquiry
-        <input required class="Query" name="query" type="radio">Support Request
-      </div>
-
-      <div id="message">
-        <p class="required">Message</p>
-        <textarea required class="msg" name="message" rows="4" placeholder="Explain your query"></textarea>
-      </div>
-    
-      <div id="checkbox">
-        <input type="checkbox" required> I consent to being contacted by the team
-      </div>
-
-      <div id="submit"> 
-        <input type="submit" class="Submitbutton" value="Submit">
-      </div>
-    </form>
+        
+        <div id="query">  
+          <p class="required">Query Type</p>
+          <div id="querydiv">
+            <label class="query-option">
+              <input required class="Query" name="query" type="radio">
+              <span>General Enquiry</span>
+            </label>
+            <label class="query-option">
+              <input required class="Query" name="query" type="radio">
+              <span>Support Request</span>
+            </label>
+          </div>
+        </div>
+        
+        <div id="message">
+          <p class="required">Message</p>
+          <textarea required class="msg" name="message" rows="4" placeholder="Explain your query"></textarea>
+        </div>
+        
+        <div id="checkbox">
+          <label><input class="checkboxs" type="checkbox"/>I consent to being contacted by the team </label>
+        </div>
+        
+        <div id="submit"> 
+          <input type="submit" class="Submitbutton" value="Submit">
+        </div>
+      </form>
+    </div>
   </div>
     
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor.</a>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor.</a>
     Coded by <a href="https://github.com/Kenobiiii">Pablo Romero Pons-Fuster.</a>
   </div>
 </body>
